@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tables>
+
+<table name="oyuncu">
+	<fields>
+		<field name="oyuncu_id" type="Long"/>
+		<field name="isim" type="String" length=""/>
+		<field name="son_duzenleme" type="String" length=""/>
+	</fields>
+	<record>
+		<field name="oyuncu_id">1</field>
+		<field name="isim">Erdal Beşikcioğlu</field>
+		<field name="son_duzenleme">25.05.2020</field>
+	</record>
+	<record>
+		<field name="oyuncu_id">2</field>
+		<field name="isim">Aras Bulut İynemli</field>
+		<field name="son_duzenleme">25.06.2020</field>
+	</record>
+	<record>
+		<field name="oyuncu_id">3</field>
+		<field name="isim">Erkan Kolçak Köstendil</field>
+		<field name="son_duzenleme">26.07.2020</field>
+	</record>
+	<record>
+		<field name="oyuncu_id">4</field>
+		<field name="isim">Öner Erkan</field>
+		<field name="son_duzenleme">27.07.2020</field>
+	</record>
+</table>
+<table name="adres">
+	<fields>
+		<field name="adres_id" type="Long"/>
+		<field name="sehir_id" type="Long"/>
+		<field name="mahalle_kodu" type="Long"/>
+		<field name="son_duzenleme" type="String" length="2044"/>
+		<field name="adres" type="String" length=""/>
+	</fields>
+	<record>
+		<field name="adres_id">1</field>
+		<field name="sehir_id">34</field>
+		<field name="mahalle_kodu">34896</field>
+		<field name="son_duzenleme">2020-12-27</field>
+		<field name="adres">pendik velibaba</field>
+	</record>
+	<record>
+		<field name="adres_id">2</field>
+		<field name="sehir_id">37</field>
+		<field name="mahalle_kodu">37896</field>
+		<field name="son_duzenleme">2020-12-27</field>
+		<field name="adres">sakarya serdivan</field>
+	</record>
+	<record>
+		<field name="adres_id">3</field>
+		<field name="sehir_id">100</field>
+		<field name="mahalle_kodu">10042</field>
+		<field name="son_duzenleme">2020-12-28</field>
+		<field name="adres">3.adresimiz</field>
+	</record>
+	<record>
+		<field name="adres_id">4</field>
+		<field name="sehir_id">101</field>
+		<field name="mahalle_kodu">10141</field>
+		<field name="son_duzenleme">2020-12-29</field>
+		<field name="adres">4.adresimiz</field>
+	</record>
+	<record>
+		<field name="adres_id">5</field>
+		<field name="sehir_id">101</field>
+		<field name="mahalle_kodu">105</field>
+		<field name="son_duzenleme">2020-12-29</field>
+		<field name="adres">5.aderes</field>
+	</record>
+</table>
+<table name="kategori">
+	<fields>
+		<field name="kategori_id" type="Long"/>
+		<field name="kategori_ismi" type="String" length=""/>
+		<field name="son_duzenleme" type="Date"/>
+	</fields>
+	<record>
+		<field name="kategori_id">1</field>
+		<field name="kategori_ismi">aşk</field>
+		<field name="son_duzenleme">2015-04-11</field>
+	</record>
+	<record>
+		<field name="kategori_id">2</field>
+		<field name="kategori_ismi">korku</field>
+		<field name="son_duzenleme">2016-08-17</field>
+	</record>
+	<record>
+		<field name="kategori_id">3</field>
+		<field name="kategori_ismi">macera</field>
+		<field name="son_duzenleme">2016-08-17</field>
+	</record>
+	<record>
+		<field name="kategori_id">4</field>
+		<field name="kategori_ismi">komedi</field>
+		<field name="son_duzenleme">2016-08-17</field>
+	</record>
+	<record>
+		<field name="kategori_id">5</field>
+		<field name="kategori_ismi">duygusal</field>
+		<field name="son_duzenleme">2016-08-17</field>
+	</record>
+</table>
+<table name="sehir">
+	<fields>
+		<field name="sehir_id" type="Long"/>
+		<field name="sehir_ismi" type="String"/>
+		<field name="ulke_id" type="Long"/>
+	</fields>
+	<record>
+		<field name="sehir_id">34</field>
+		<field name="sehir_ismi">İstanbul</field>
+		<field name="ulke_id">1</field>
+	</record>
+	<record>
+		<field name="sehir_id">54</field>
+		<field name="sehir_ismi">Sakarya</field>
+		<field name="ulke_id">1</field>
+	</record>
+	<record>
+		<field name="sehir_id">37</field>
+		<field name="sehir_ismi">Kastamonu</field>
+		<field name="ulke_id">1</field>
+	</record>
+	<record>
+		<field name="sehir_id">123</field>
+		<field name="sehir_ismi">Newyork</field>
+		<field name="ulke_id">3</field>
+	</record>
+	<record>
+		<field name="sehir_id">100</field>
+		<field name="sehir_ismi">Delhi</field>
+		<field name="ulke_id">5</field>
+	</record>
+	<record>
+		<field name="sehir_id">101</field>
+		<field name="sehir_ismi">Dc</field>
+		<field name="ulke_id">2</field>
+	</record>
+</table>
+<table name="ulke">
+	<fields>
+		<field name="ulke_id" type="Long"/>
+		<field name="ulke_ismi" type="String" length=""/>
+	</fields>
+	<record>
+		<field name="ulke_id">1</field>
+		<field name="ulke_ismi">TÜRKIYE</field>
+	</record>
+	<record>
+		<field name="ulke_id">2</field>
+		<field name="ulke_ismi">ABD</field>
+	</record>
+	<record>
+		<field name="ulke_id">3</field>
+		<field name="ulke_ismi">İngiltere</field>
+	</record>
+	<record>
+		<field name="ulke_id">4</field>
+		<field name="ulke_ismi">RUSYA</field>
+	</record>
+	<record>
+		<field name="ulke_id">5</field>
+		<field name="ulke_ismi">HINDISTAN</field>
+	</record>
+	<record>
+		<field name="ulke_id">6</field>
+		<field name="ulke_ismi">İTALYA</field>
+	</record>
+</table>
+<table name="musteri">
+	<fields>
+		<field name="musteri_id" type="Long"/>
+		<field name="isim" type="String" length=""/>
+		<field name="soyisim" type="String" length=""/>
+		<field name="mail" type="String" length=""/>
+		<field name="adres_id" type="Long"/>
+		<field name="dukkan_id" type="Long"/>
+		<field name="son_duzenleme" type="Date"/>
+	</fields>
+	<record>
+		<field name="musteri_id">1</field>
+		<field name="isim">Hasan</field>
+		<field name="soyisim">Muslan</field>
+		<field name="mail">hasan_muslan@hotmail.com</field>
+		<field name="adres_id">1</field>
+		<field name="dukkan_id">1</field>
+		<field name="son_duzenleme">2017-07-10</field>
+	</record>
+	<record>
+		<field name="musteri_id">2</field>
+		<field name="isim">Cemile</field>
+		<field name="soyisim">Özsoy</field>
+		<field name="mail">cemile_ozsoy</field>
+		<field name="adres_id">2</field>
+		<field name="dukkan_id">2</field>
+		<field name="son_duzenleme">2017-07-10</field>
+	</record>
+	<record>
+		<field name="musteri_id">3</field>
+		<field name="isim">Necla</field>
+		<field name="soyisim">Diken</field>
+		<field name="mail">necla_diken@hotmail.com</field>
+		<field name="adres_id">3</field>
+		<field name="dukkan_id">3</field>
+		<field name="son_duzenleme">2017-07-10</field>
+	</record>
+	<record>
+		<field name="musteri_id">4</field>
+		<field name="isim">Jehad</field>
+		<field name="soyisim">Assaf</field>
+		<field name="mail">jehad_assaf@gmail.com</field>
+		<field name="adres_id">4</field>
+		<field name="dukkan_id">4</field>
+		<field name="son_duzenleme">2020-05-11</field>
+	</record>
+</table>
+<table name="film">
+	<fields>
+		<field name="film_id" type="Long"/>
+		<field name="baslik" type="String" length=""/>
+		<field name="intro" type="String" length=""/>
+		<field name="dil_id" type="Long"/>
+		<field name="sure" type="Long"/>
+		<field name="imdb_puan" type="Double"/>
+		<field name="vizyon_tarihi" type="String" length=""/>
+		<field name="son_duzenleme" type="Date"/>
+	</fields>
+	<record>
+		<field name="film_id">1</field>
+		<field name="baslik">Babam ve oğlum</field>
+		<field name="intro">duygusal baba oğul filmi</field>
+		<field name="dil_id">1</field>
+		<field name="sure">147</field>
+		<field name="imdb_puan">7.8</field>
+		<field name="vizyon_tarihi">2012</field>
+		<field name="son_duzenleme">2013-03-03</field>
+	</record>
+	<record>
+		<field name="film_id">2</field>
+		<field name="baslik">Yenilmezler</field>
+		<field name="intro">marvel ekibinin macerasi</field>
+		<field name="dil_id">2</field>
+		<field name="sure">125</field>
+		<field name="imdb_puan">8.3</field>
+		<field name="vizyon_tarihi">2015</field>
+		<field name="son_duzenleme">2016-03-03</field>
+	</record>
+	<record>
+		<field name="film_id">3</field>
+		<field name="baslik">7.Koğuştaki Mucize</field>
+		<field name="intro">arasbulutun efsane filmi</field>
+		<field name="dil_id">1</field>
+		<field name="sure">132</field>
+		<field name="imdb_puan">8.3</field>
+		<field name="vizyon_tarihi">2018</field>
+		<field name="son_duzenleme">2018-08-08</field>
+	</record>
+	<record>
+		<field name="film_id">4</field>
+		<field name="baslik">Behzat Ç</field>
+		<field name="intro">Bir Erdal Beşikcioğlu efsanesi</field>
+		<field name="dil_id">1</field>
+		<field name="sure">97</field>
+		<field name="imdb_puan">6.3</field>
+		<field name="vizyon_tarihi">2014</field>
+		<field name="son_duzenleme">2014-04-04</field>
+	</record>
+</table>
+<table name="film_oyuncu">
+	<fields>
+		<field name="oyuncu_id" type="Long"/>
+		<field name="film_id" type="Long"/>
+		<field name="son_duzenleme" type="Date"/>
+	</fields>
+	<record>
+		<field name="oyuncu_id">1</field>
+		<field name="film_id">1</field>
+		<field name="son_duzenleme">2020-03-03</field>
+	</record>
+	<record>
+		<field name="oyuncu_id">2</field>
+		<field name="film_id">2</field>
+		<field name="son_duzenleme">2020-03-03</field>
+	</record>
+	<record>
+		<field name="oyuncu_id">3</field>
+		<field name="film_id">3</field>
+		<field name="son_duzenleme">2020-03-03</field>
+	</record>
+	<record>
+		<field name="oyuncu_id">4</field>
+		<field name="film_id">4</field>
+		<field name="son_duzenleme">2020-03-03</field>
+	</record>
+</table>
+<table name="film_kategori">
+	<fields>
+		<field name="kategori_id" type="Long"/>
+		<field name="film_id" type="Long"/>
+		<field name="son_duzenleme" type="Date"/>
+	</fields>
+	<record>
+		<field name="kategori_id">3</field>
+		<field name="film_id">2</field>
+		<field name="son_duzenleme">2020-03-03</field>
+	</record>
+	<record>
+		<field name="kategori_id">5</field>
+		<field name="film_id">1</field>
+		<field name="son_duzenleme">2020-03-03</field>
+	</record>
+	<record>
+		<field name="kategori_id">5</field>
+		<field name="film_id">1</field>
+		<field name="son_duzenleme">2020-03-03</field>
+	</record>
+	<record>
+		<field name="kategori_id">3</field>
+		<field name="film_id">4</field>
+		<field name="son_duzenleme">2020-03-03</field>
+	</record>
+</table>
+<table name="icerik">
+	<fields>
+		<field name="icerik_id" type="Long"/>
+		<field name="film_id" type="Long"/>
+		<field name="dukkan_id" type="Long"/>
+		<field name="son_duzenleme" type="Date"/>
+	</fields>
+	<record>
+		<field name="icerik_id">1</field>
+		<field name="film_id">1</field>
+		<field name="dukkan_id">1</field>
+		<field name="son_duzenleme">2020-04-04</field>
+	</record>
+	<record>
+		<field name="icerik_id">2</field>
+		<field name="film_id">3</field>
+		<field name="dukkan_id">1</field>
+		<field name="son_duzenleme">2020-04-04</field>
+	</record>
+	<record>
+		<field name="icerik_id">3</field>
+		<field name="film_id">4</field>
+		<field name="dukkan_id">1</field>
+		<field name="son_duzenleme">2020-04-04</field>
+	</record>
+	<record>
+		<field name="icerik_id">4</field>
+		<field name="film_id">2</field>
+		<field name="dukkan_id">2</field>
+		<field name="son_duzenleme">2020-05-05</field>
+	</record>
+</table>
+<table name="dil">
+	<fields>
+		<field name="dil_id" type="Long"/>
+		<field name="dil_ismi" type="String" length=""/>
+		<field name="son_duzenleme" type="Date"/>
+	</fields>
+	<record>
+		<field name="dil_id">1</field>
+		<field name="dil_ismi">Türkçe</field>
+		<field name="son_duzenleme">2018-10-10</field>
+	</record>
+	<record>
+		<field name="dil_id">2</field>
+		<field name="dil_ismi">İngilizce</field>
+		<field name="son_duzenleme">2018-10-10</field>
+	</record>
+	<record>
+		<field name="dil_id">3</field>
+		<field name="dil_ismi">Rusca</field>
+		<field name="son_duzenleme">2018-10-10</field>
+	</record>
+</table>
+<table name="odeme">
+	<fields>
+		<field name="odeme_id" type="Long"/>
+		<field name="musteri_id" type="Long"/>
+		<field name="personel_id" type="Long"/>
+		<field name="kira_id" type="Long"/>
+		<field name="miktar" type="Double"/>
+		<field name="odeme_tarihi" type="Date"/>
+	</fields>
+	<record>
+		<field name="odeme_id">1</field>
+		<field name="musteri_id">1</field>
+		<field name="personel_id">1</field>
+		<field name="kira_id">1</field>
+		<field name="miktar">500</field>
+		<field name="odeme_tarihi">2020-05-05</field>
+	</record>
+	<record>
+		<field name="odeme_id">2</field>
+		<field name="musteri_id">2</field>
+		<field name="personel_id">2</field>
+		<field name="kira_id">2</field>
+		<field name="miktar">700</field>
+		<field name="odeme_tarihi">2020-05-05</field>
+	</record>
+	<record>
+		<field name="odeme_id">3</field>
+		<field name="musteri_id">3</field>
+		<field name="personel_id">3</field>
+		<field name="kira_id">3</field>
+		<field name="miktar">800</field>
+		<field name="odeme_tarihi">2020-06-06</field>
+	</record>
+	<record>
+		<field name="odeme_id">4</field>
+		<field name="musteri_id">4</field>
+		<field name="personel_id">4</field>
+		<field name="kira_id">4</field>
+		<field name="miktar">900</field>
+		<field name="odeme_tarihi">2020-07-07</field>
+	</record>
+</table>
+<table name="kira">
+	<fields>
+		<field name="kira_id" type="Long"/>
+		<field name="icerik_id" type="Long"/>
+		<field name="musteri_id" type="Long"/>
+		<field name="personel_id" type="Long"/>
+		<field name="kira_tarihi" type="Date"/>
+		<field name="son_duzenleme" type="Date"/>
+	</fields>
+	<record>
+		<field name="kira_id">1</field>
+		<field name="icerik_id">1</field>
+		<field name="musteri_id">1</field>
+		<field name="personel_id">1</field>
+		<field name="kira_tarihi">2020-05-05</field>
+		<field name="son_duzenleme">2020-05-05</field>
+	</record>
+	<record>
+		<field name="kira_id">2</field>
+		<field name="icerik_id">2</field>
+		<field name="musteri_id">2</field>
+		<field name="personel_id">2</field>
+		<field name="kira_tarihi">2020-05-05</field>
+		<field name="son_duzenleme">2020-05-05</field>
+	</record>
+	<record>
+		<field name="kira_id">3</field>
+		<field name="icerik_id">3</field>
+		<field name="musteri_id">3</field>
+		<field name="personel_id">3</field>
+		<field name="kira_tarihi">2020-05-05</field>
+		<field name="son_duzenleme">2020-05-05</field>
+	</record>
+	<record>
+		<field name="kira_id">4</field>
+		<field name="icerik_id">4</field>
+		<field name="musteri_id">4</field>
+		<field name="personel_id">4</field>
+		<field name="kira_tarihi">2020-05-05</field>
+		<field name="son_duzenleme">2020-05-05</field>
+	</record>
+</table>
+<table name="personel">
+	<fields>
+		<field name="personel_id" type="Long"/>
+		<field name="isim" type="String" length=""/>
+		<field name="soyisim" type="String" length=""/>
+		<field name="mail" type="String" length=""/>
+		<field name="adres_id" type="Long"/>
+		<field name="dukkan_id" type="Long"/>
+		<field name="kullanici_adi" type="String" length=""/>
+		<field name="parola" type="String" length=""/>
+		<field name="son_duzenleme" type="Date"/>
+	</fields>
+	<record>
+		<field name="personel_id">1</field>
+		<field name="isim">Emirhan</field>
+		<field name="soyisim">Ergen</field>
+		<field name="mail">emirhan_ergen@hotmail.com</field>
+		<field name="adres_id">1</field>
+		<field name="dukkan_id">1</field>
+		<field name="kullanici_adi">emiirrhan</field>
+		<field name="parola">123456789</field>
+		<field name="son_duzenleme">2020-05-06</field>
+	</record>
+	<record>
+		<field name="personel_id">2</field>
+		<field name="isim">Ezgi</field>
+		<field name="soyisim">Ergen</field>
+		<field name="mail">ezgi_ergen@hotmail.com</field>
+		<field name="adres_id">2</field>
+		<field name="dukkan_id">2</field>
+		<field name="kullanici_adi">ezgii</field>
+		<field name="parola">123456789</field>
+		<field name="son_duzenleme">2020-05-06</field>
+	</record>
+	<record>
+		<field name="personel_id">3</field>
+		<field name="isim">Nazlı</field>
+		<field name="soyisim">Ergen</field>
+		<field name="mail">nazlı_ergen@hot.com</field>
+		<field name="adres_id">3</field>
+		<field name="dukkan_id">3</field>
+		<field name="kullanici_adi">nazlii</field>
+		<field name="parola">123456789</field>
+		<field name="son_duzenleme">2020-05-07</field>
+	</record>
+	<record>
+		<field name="personel_id">4</field>
+		<field name="isim">Nazo</field>
+		<field name="soyisim">Erol</field>
+		<field name="mail">nazo_erol@hot.com</field>
+		<field name="adres_id">4</field>
+		<field name="dukkan_id">4</field>
+		<field name="kullanici_adi">nazdiyeceksin</field>
+		<field name="parola">123456789</field>
+		<field name="son_duzenleme">2020-05-07</field>
+	</record>
+</table>
+<table name="dukkan">
+	<fields>
+		<field name="dukkan_id" type="Long"/>
+		<field name="adres_id" type="Long"/>
+		<field name="destek_personel_id" type="Long"/>
+	</fields>
+	<record>
+		<field name="dukkan_id">1</field>
+		<field name="adres_id">1</field>
+		<field name="destek_personel_id">1</field>
+	</record>
+	<record>
+		<field name="dukkan_id">2</field>
+		<field name="adres_id">3</field>
+		<field name="destek_personel_id">2</field>
+	</record>
+	<record>
+		<field name="dukkan_id">3</field>
+		<field name="adres_id">2</field>
+		<field name="destek_personel_id">4</field>
+	</record>
+	<record>
+		<field name="dukkan_id">4</field>
+		<field name="adres_id">4</field>
+		<field name="destek_personel_id">3</field>
+	</record>
+</table></tables>
